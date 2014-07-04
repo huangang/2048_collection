@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <title>终 (篆书版) - 2048</title>
+
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">终</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    <p class="game-intro">以<strong>终</strong>为目标，融合这些“砖块”。</p>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">继续游戏</a>
+          <a class="retry-button">再来一局</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">游戏规则：</strong>按<strong>方向键</strong>以移动“砖块”，两个相同的砖块可以<strong>融合到一起</strong>产生下一级的砖块。<br />
+      砖块的产生遵循：
+      “<img src="img/1.png" class="tile-example" />”
+      “<img src="img/2.png" class="tile-example" />”
+      “<img src="img/3.png" class="tile-example dark-tile" />”
+      “<img src="img/4.png" class="tile-example dark-tile" />”
+      “<img src="img/5.png" class="tile-example dark-tile" />”
+      “<img src="img/6.png" class="tile-example dark-tile" />”
+      “<img src="img/7.png" class="tile-example" />”
+      “<img src="img/8.png" class="tile-example" />”
+      “<img src="img/9.png" class="tile-example" />”
+      “<img src="img/a.png" class="tile-example" />”
+      “<img src="img/b.png" class="tile-example" />”
+      <span class="hidden-tile">
+      “<img src="img/c.png" class="tile-example" />”
+      “<img src="img/d.png" class="tile-example" />”
+      “<img src="img/e.png" class="tile-example" />”
+      “<img src="img/f.png" class="tile-example" />”
+      “<img src="img/g.png" class="tile-example" />”
+      “<img src="img/h.png" class="tile-example" />”
+      “<img src="img/i.png" class="tile-example" />”
+      </span>
+    </p>
+    <hr>
+      <p style="text-algin:center;">Power By <a href="http://www.huangang.net">章大叔</a></p>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_score_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
